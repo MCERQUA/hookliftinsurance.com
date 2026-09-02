@@ -186,6 +186,43 @@ export default function QuotePage() {
                   </div>
                 </div>
 
+                {/* Equipment + business identity */}
+                <div>
+                  <h2 className="text-base font-semibold text-slate-900 mb-4 border-b border-slate-100 pb-2">
+                    Equipment &amp; Business Details
+                  </h2>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className={labelClass}>Street Address <span className="text-red-500">*</span></label>
+                    <input type="text" name="streetAddress" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>FEIN (Federal Tax ID) <span className="text-red-500">*</span></label>
+                    <input type="text" name="fein" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Equipment Year <span className="text-red-500">*</span></label>
+                    <input type="number" name="equipmentYear" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Equipment Make <span className="text-red-500">*</span></label>
+                    <input type="text" name="equipmentMake" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Equipment Model <span className="text-red-500">*</span></label>
+                    <input type="text" name="equipmentModel" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Equipment Serial Number <span className="text-red-500">*</span></label>
+                    <input type="text" name="equipmentSerialNumber" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>Equipment Value ($) <span className="text-red-500">*</span></label>
+                    <input type="text" name="equipmentValue" required className={inputClass} />
+                  </div>
+                  </div>
+                </div>
+
                 {/* Additional info */}
                 <div>
                   <label className={labelClass}>Additional Information</label>
