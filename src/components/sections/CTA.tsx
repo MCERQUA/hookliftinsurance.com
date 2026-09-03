@@ -23,7 +23,7 @@ export function CTA() {
             Call 844-967-5247
           </a>
           <a
-            href="#quote"
+            href="/quote"
             className="inline-flex items-center gap-2 bg-blue-700 text-white font-semibold px-6 py-4 rounded-lg hover:bg-blue-800 transition-colors w-full sm:w-auto justify-center border border-blue-500"
           >
             Get a Free Quote Online

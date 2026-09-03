@@ -66,7 +66,7 @@ export function HowItWorks() {
         {/* CTA below steps */}
         <div className="text-center mt-14">
           <a
-            href="#quote"
+            href="/quote"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
           >
             Start Your Free Quote
