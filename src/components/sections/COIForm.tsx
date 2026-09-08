@@ -1,6 +1,50 @@
 "use client";
 
+import { useState, FormEvent } from "react";
+
+const FIELDS = [
+  "business_name", "contact_name", "phone", "email",
+  "policy_number", "certificate_type", "certificate_holder",
+  "certificate_holder_address", "project_name", "notes",
+] as const;
+
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((k) => encodeURIComponent(k) + "=" + encodeURIComponent(data[k]))
+    .join("&");
+}
+
 export function COIForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    if (fd.get("bot-field")) return;
+
+    setSubmitting(true);
+    setError("");
+    const data: Record<string, string> = { "form-name": "coi" };
+    FIELDS.forEach((k) => { data[k] = (fd.get(k) ?? "").toString(); });
+
+    try {
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(data),
+      });
+      if (!res.ok) throw new Error("Request failed with status " + res.status);
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError("We could not submit your request. Please call us at 844-967-5247 and we will issue the certificate right away.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
       {/* Trust indicator */}
@@ -14,7 +58,21 @@ export function COIForm() {
         </p>
       </div>
 
-      <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Thank you! Your certificate request has been submitted. We will contact you shortly."); }}>
+      <form
+        name="coi"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        className="space-y-6"
+        onSubmit={handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="coi" />
+        <p hidden>
+          <label>
+            Do not fill this out: <input name="bot-field" />
+          </label>
+        </p>
+
         
         {/* Section: Policyholder Info */}
         <div>
@@ -169,15 +227,24 @@ export function COIForm() {
 
         {/* Submit */}
         <div className="pt-2">
+          {error && (
+            <p className="mb-4 text-sm text-red-600" role="alert">{error}</p>
+          )}
+          {submitted && (
+            <p className="mb-4 text-sm font-semibold text-green-700" role="status">
+              Thank you — your certificate request has been received. We will contact you shortly.
+            </p>
+          )}
           <button
             type="submit"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer"
+            disabled={submitting}
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="m22 2-7 20-4-9-9-4Z"></path>
               <path d="M22 2 11 13"></path>
             </svg>
-            Submit Certificate Request
+            {submitting ? "Submitting…" : "Submit Certificate Request"}
           </button>
           <p className="text-xs text-slate-500 mt-3">
             Requests submitted after 4pm Arizona time will be processed the next business morning.

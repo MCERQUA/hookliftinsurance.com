@@ -25,7 +25,7 @@ export default function ContactPage() {
 
     try {
       await fetch(
-        "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance",
+        "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance.com",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

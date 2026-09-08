@@ -36,7 +36,7 @@ export default function QuotePage() {
 
     try {
       await fetch(
-        "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance",
+        "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance.com",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -195,6 +195,14 @@ export default function QuotePage() {
                   <div>
                     <label className={labelClass}>Street Address <span className="text-red-500">*</span></label>
                     <input type="text" name="streetAddress" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>City <span className="text-red-500">*</span></label>
+                    <input type="text" name="city" required className={inputClass} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>ZIP Code <span className="text-red-500">*</span></label>
+                    <input type="text" name="zip" required inputMode="numeric" pattern="[0-9]{5}" maxLength={5} className={inputClass} />
                   </div>
                   <div>
                     <label className={labelClass}>FEIN (Federal Tax ID) <span className="text-red-500">*</span></label>
