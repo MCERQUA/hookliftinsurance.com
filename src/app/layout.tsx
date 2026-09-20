@@ -6,7 +6,6 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hookliftinsurance.com"),
-  alternates: { canonical: "/" },
   title: {
     default: "Hooklift Insurance — Coverage for Hooklift, Roll-Off & Crane Trucks",
     template: "%s | Hooklift Insurance",
