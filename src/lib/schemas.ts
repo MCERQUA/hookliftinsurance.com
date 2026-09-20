@@ -5,7 +5,6 @@ export const organizationSchema = {
   "@type": "Organization",
   name: "Hooklift Insurance",
   url: SITE_URL,
-  logo: `${SITE_URL}/favicon.ico`,
   description:
     "Specialized insurance for contractors operating hooklift trucks, roll-off trucks, and crane trucks. Provided by Contractors Choice Agency, licensed in all 50 states.",
   telephone: "+18449675247",
@@ -27,7 +26,6 @@ export const insuranceAgencySchema = {
   "@type": "InsuranceAgency",
   name: "Hooklift Insurance — Contractors Choice Agency",
   url: SITE_URL,
-  image: `${SITE_URL}/og/default.png`,
   telephone: "+18449675247",
   priceRange: "$$",
   address: {
