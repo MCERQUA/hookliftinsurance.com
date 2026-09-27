@@ -41,7 +41,7 @@ export function FAQ() {
         <div className="max-w-3xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-2">
               FAQ
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -83,13 +83,13 @@ export function FAQ() {
           </div>
 
           {/* Still have questions CTA */}
-          <div className="text-center mt-8 p-6 bg-blue-50 rounded-xl">
+          <div className="text-center mt-8 p-6 bg-orange-50 rounded-xl">
             <p className="text-sm text-slate-600 mb-3">
               Still have questions? Talk to a specialist who knows hooklift coverage.
             </p>
             <a
               href="tel:844-967-5247"
-              className="text-blue-600 font-semibold text-sm hover:text-blue-700"
+              className="text-orange-700 font-semibold text-sm hover:text-orange-800"
             >
               Call 844-967-5247
             </a>

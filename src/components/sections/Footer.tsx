@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-orange-700 rounded-lg flex items-center justify-center">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -27,7 +27,7 @@ export function Footer() {
                 </svg>
               </div>
               <span className="text-white font-bold text-base">
-                Hooklift<span className="text-blue-400">Insurance</span>
+                Hooklift<span className="text-orange-400">Insurance</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">

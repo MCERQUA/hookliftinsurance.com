@@ -18,7 +18,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="bg-white py-14 md:py-20 border-b border-slate-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-3">
             Blog
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-5">
@@ -55,14 +55,14 @@ export default function BlogPage() {
                   </span>
                 </div>
                 <h2 className="text-xl font-bold text-slate-900 mb-2 leading-snug">
-                  <a href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors">
+                  <a href={`/blog/${post.slug}`} className="hover:text-orange-700 transition-colors">
                     {post.title}
                   </a>
                 </h2>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">{post.description}</p>
                 <a
                   href={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-700 hover:text-orange-800 transition-colors"
                 >
                   Read article <ArrowRight className="w-4 h-4" />
                 </a>

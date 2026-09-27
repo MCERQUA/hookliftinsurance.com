@@ -21,7 +21,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-orange-700 rounded-lg flex items-center justify-center">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -38,7 +38,7 @@ export function Navbar() {
               </svg>
             </div>
             <span className="text-lg font-bold text-slate-900">
-              Hooklift<span className="text-blue-600">Insurance</span>
+              Hooklift<span className="text-orange-700">Insurance</span>
             </span>
           </a>
 
@@ -48,7 +48,7 @@ export function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-orange-700 transition-colors"
               >
                 {link.label}
               </a>
@@ -59,14 +59,14 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:844-967-5247"
-              className="flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+              className="flex items-center gap-2 text-sm font-semibold text-orange-700 hover:text-orange-800 transition-colors"
             >
               <Phone className="w-4 h-4" />
               844-967-5247
             </a>
             <a
               href="/quote"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+              className="bg-orange-700 hover:bg-orange-800 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
             >
               Get a Quote
             </a>
@@ -91,7 +91,7 @@ export function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-blue-600 py-2 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-orange-700 py-2 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -99,14 +99,14 @@ export function Navbar() {
             ))}
             <a
               href="tel:844-967-5247"
-              className="flex items-center gap-2 text-sm font-semibold text-blue-600 py-2"
+              className="flex items-center gap-2 text-sm font-semibold text-orange-700 py-2"
             >
               <Phone className="w-4 h-4" />
               844-967-5247
             </a>
             <a
               href="/quote"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg text-center transition-colors mt-1"
+              className="bg-orange-700 hover:bg-orange-800 text-white text-sm font-semibold px-4 py-2.5 rounded-lg text-center transition-colors mt-1"
               onClick={() => setMobileOpen(false)}
             >
               Get a Free Quote

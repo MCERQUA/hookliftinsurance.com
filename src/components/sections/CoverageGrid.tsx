@@ -47,7 +47,7 @@ export function CoverageGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mb-12">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-2">
             Coverage Options
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -64,10 +64,10 @@ export function CoverageGrid() {
           {coverages.map((coverage) => (
             <div
               key={coverage.title}
-              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-200 hover:shadow-md transition-all duration-200"
+              className="bg-white border border-slate-200 rounded-xl p-6 hover:border-orange-200 hover:shadow-md transition-all duration-200"
             >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
-                <coverage.icon className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-5">
+                <coverage.icon className="w-6 h-6 text-orange-700" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">{coverage.title}</h3>
               <p className="text-sm text-slate-600 leading-relaxed">{coverage.description}</p>

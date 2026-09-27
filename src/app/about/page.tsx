@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-white py-14 md:py-20 border-b border-slate-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-3">
             About Us
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-5">
@@ -69,7 +69,7 @@ export default function AboutPage() {
               <ul className="mt-8 space-y-3">
                 {trustPoints.map((point) => (
                   <li key={point} className="flex items-start gap-3 text-sm text-slate-700">
-                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     {point}
                   </li>
                 ))}
@@ -82,25 +82,25 @@ export default function AboutPage() {
                 <h2 className="text-xl font-bold text-slate-900 mb-6">Contact Information</h2>
                 <ul className="space-y-5">
                   <li className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Phone className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Phone</p>
-                      <a href="tel:844-967-5247" className="text-slate-900 font-semibold hover:text-blue-600 transition-colors">
+                      <a href="tel:844-967-5247" className="text-slate-900 font-semibold hover:text-orange-700 transition-colors">
                         844-967-5247
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Mail className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Email</p>
-                      <a href="mailto:josh@contractorschoiceagency.com" className="text-slate-900 font-semibold hover:text-blue-600 transition-colors break-all">
+                      <a href="mailto:josh@contractorschoiceagency.com" className="text-slate-900 font-semibold hover:text-orange-700 transition-colors break-all">
                         josh@contractorschoiceagency.com
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Address</p>
                       <address className="text-slate-900 not-italic leading-relaxed">
@@ -113,10 +113,10 @@ export default function AboutPage() {
               </div>
 
               {/* Founder card */}
-              <div className="bg-blue-600 rounded-2xl p-8 text-white">
-                <p className="text-blue-200 text-xs font-semibold uppercase tracking-wider mb-2">Founder</p>
+              <div className="bg-orange-700 rounded-2xl p-8 text-white">
+                <p className="text-orange-200 text-xs font-semibold uppercase tracking-wider mb-2">Founder</p>
                 <h3 className="text-xl font-bold mb-2">Josh Cotner</h3>
-                <p className="text-blue-100 text-sm leading-relaxed">
+                <p className="text-orange-100 text-sm leading-relaxed">
                   Josh founded Contractors Choice Agency after seeing specialty truck operators
                   overpay for coverage that didn&apos;t fit their operations. He personally works
                   with hooklift and roll-off operators across the country.
@@ -136,7 +136,7 @@ export default function AboutPage() {
           </p>
           <a
             href="/quote"
-            className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-orange-700 text-white font-semibold px-8 py-4 rounded-lg hover:bg-orange-800 transition-colors"
           >
             Get a Free Quote
           </a>

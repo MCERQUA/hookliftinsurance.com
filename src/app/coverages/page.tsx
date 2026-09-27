@@ -15,8 +15,8 @@ const coverages = [
     title: "General Liability",
     description:
       "Protects your business against third-party bodily injury and property damage claims that occur during your operations — at job sites, loading areas, and customer properties.",
-    color: "text-blue-600",
-    bg: "bg-blue-50",
+    color: "text-orange-700",
+    bg: "bg-orange-50",
   },
   {
     icon: Truck,
@@ -39,8 +39,8 @@ const coverages = [
     title: "Non-Trucking Liability",
     description:
       "Covers your truck during personal use between jobs — when you're not under dispatch. Fills the gap left by trucking liability policies that only cover commercial operations.",
-    color: "text-violet-600",
-    bg: "bg-violet-50",
+    color: "text-amber-700",
+    bg: "bg-amber-50",
   },
   {
     icon: HeartHandshake,
@@ -68,7 +68,7 @@ export default function CoveragesPage() {
       {/* Hero */}
       <section className="bg-white py-14 md:py-20 border-b border-slate-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-3">
             Coverage Options
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-5">
@@ -102,7 +102,7 @@ export default function CoveragesPage() {
                   <div className="mt-auto pt-2">
                     <a
                       href="/quote"
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-700 hover:text-orange-800 transition-colors"
                     >
                       Get a quote <ArrowRight className="w-4 h-4" />
                     </a>
@@ -115,25 +115,25 @@ export default function CoveragesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-600 py-14 md:py-20">
+      <section className="bg-orange-700 py-14 md:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Not sure which coverages you need?
           </h2>
-          <p className="text-blue-100 mb-8 text-lg">
+          <p className="text-orange-100 mb-8 text-lg">
             Our specialists will review your operation and build a policy that covers your actual
             risks — without paying for coverage you don&apos;t need.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/quote"
-              className="bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors"
+              className="bg-white text-orange-700 font-semibold px-8 py-4 rounded-lg hover:bg-orange-50 transition-colors"
             >
               Get a Free Quote
             </a>
             <a
               href="tel:844-967-5247"
-              className="text-white font-semibold px-8 py-4 rounded-lg border border-blue-400 hover:bg-blue-700 transition-colors"
+              className="text-white font-semibold px-8 py-4 rounded-lg border border-orange-400 hover:bg-orange-800 transition-colors"
             >
               Call 844-967-5247
             </a>

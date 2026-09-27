@@ -10,7 +10,7 @@ export function Hero() {
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563eb" strokeWidth="1"/>
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#c2410c" strokeWidth="1"/>
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -20,7 +20,7 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
             <ShieldCheck className="w-4 h-4" />
             Specialized Coverage for Hooklift & Roll-Off Operations
           </div>
@@ -28,7 +28,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
             Hooklift Insurance Built for{" "}
-            <span className="text-blue-600">Heavy Truck Contractors</span>
+            <span className="text-orange-700">Heavy Truck Contractors</span>
           </h1>
 
           {/* Subheadline */}
@@ -42,7 +42,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="/quote"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 rounded-lg text-base transition-colors shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-orange-700 hover:bg-orange-800 text-white font-semibold px-6 py-4 rounded-lg text-base transition-colors shadow-sm"
             >
               Get a Free Quote
             </a>
@@ -50,7 +50,7 @@ export function Hero() {
               href="tel:844-967-5247"
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-900 font-semibold px-6 py-4 rounded-lg text-base border border-slate-200 transition-colors"
             >
-              <Phone className="w-5 h-5 text-blue-600" />
+              <Phone className="w-5 h-5 text-orange-700" />
               Call 844-967-5247
             </a>
           </div>

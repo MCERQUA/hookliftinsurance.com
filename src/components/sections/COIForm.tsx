@@ -48,13 +48,13 @@ export function COIForm() {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
       {/* Trust indicator */}
-      <div className="flex items-center gap-3 mb-8 p-4 bg-blue-50 rounded-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+      <div className="flex items-center gap-3 mb-8 p-4 bg-orange-50 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
           <path d="m9 12 2 2 4-4"></path>
         </svg>
         <p className="text-sm text-slate-700">
-          <strong className="text-blue-700">Your information is secure.</strong> Certificates are typically delivered within 1 hour during business hours.
+          <strong className="text-orange-800">Your information is secure.</strong> Certificates are typically delivered within 1 hour during business hours.
         </p>
       </div>
 
@@ -88,7 +88,7 @@ export function COIForm() {
                 type="text"
                 name="business_name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-slate-400"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-slate-400"
                 placeholder="ABC Hooklift Services LLC"
               />
             </div>
@@ -100,7 +100,7 @@ export function COIForm() {
                 type="text"
                 name="contact_name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="Mike Rodriguez"
               />
             </div>
@@ -112,7 +112,7 @@ export function COIForm() {
                 type="tel"
                 name="phone"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="(844) 967-5247"
               />
             </div>
@@ -124,7 +124,7 @@ export function COIForm() {
                 type="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="mike@abchooklift.com"
               />
             </div>
@@ -145,7 +145,7 @@ export function COIForm() {
                 type="text"
                 name="policy_number"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="CCA-2026-XXXXX"
               />
             </div>
@@ -156,7 +156,7 @@ export function COIForm() {
               <select
                 name="certificate_type"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
               >
                 <option value="">Select certificate type</option>
                 <option value="acord-25">ACORD 25 — Certificate of Liability Insurance</option>
@@ -175,7 +175,7 @@ export function COIForm() {
                 type="text"
                 name="certificate_holder"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="General Contractor / Property Owner / Entity Name"
               />
             </div>
@@ -186,7 +186,7 @@ export function COIForm() {
               <input
                 type="text"
                 name="certificate_holder_address"
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="1234 Industrial Blvd, Phoenix, AZ 85001"
               />
             </div>
@@ -207,7 +207,7 @@ export function COIForm() {
                 type="text"
                 name="project_name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 placeholder="Downtown Phoenix Mixed-Use Project"
               />
             </div>
@@ -218,7 +218,7 @@ export function COIForm() {
               <textarea
                 name="notes"
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
                 placeholder="Any specific requirements, limits, or additional insureds to include..."
               />
             </div>
@@ -238,7 +238,7 @@ export function COIForm() {
           <button
             type="submit"
             disabled={submitting}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-700 text-white font-semibold px-8 py-4 rounded-lg hover:bg-orange-800 transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="m22 2-7 20-4-9-9-4Z"></path>
@@ -255,7 +255,7 @@ export function COIForm() {
       {/* Contact alternative */}
       <div className="mt-6 text-center p-6 bg-slate-50 rounded-xl border border-slate-200">
         <p className="text-sm text-slate-600 mb-2">Need it urgent? Call us directly:</p>
-        <a href="tel:844-967-5247" className="text-xl font-bold text-blue-600 hover:text-blue-700">
+        <a href="tel:844-967-5247" className="text-xl font-bold text-orange-700 hover:text-orange-800">
           844-967-5247
         </a>
         <p className="text-xs text-slate-500 mt-1">Available 24/7 for certificate requests</p>

@@ -32,7 +32,7 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-14">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-2">
             How It Works
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -51,10 +51,10 @@ export function HowItWorks() {
 
           {steps.map((step) => (
             <div key={step.number} className="relative z-10 flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-600/20">
+              <div className="w-16 h-16 bg-orange-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-700/20">
                 <step.icon className="w-7 h-7 text-white" />
               </div>
-              <div className="text-sm font-bold text-blue-600 mb-2 tracking-widest">
+              <div className="text-sm font-bold text-orange-700 mb-2 tracking-widest">
                 {step.number}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
@@ -67,7 +67,7 @@ export function HowItWorks() {
         <div className="text-center mt-14">
           <a
             href="/quote"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-orange-700 hover:bg-orange-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
           >
             Start Your Free Quote
           </a>

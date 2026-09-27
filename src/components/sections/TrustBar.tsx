@@ -32,8 +32,8 @@ export function TrustBar() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {trustItems.map((item) => (
             <div key={item.title} className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
-                <item.icon className="w-5 h-5 text-blue-600" />
+              <div className="flex-shrink-0 w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center">
+                <item.icon className="w-5 h-5 text-orange-700" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-slate-900">{item.title}</h3>

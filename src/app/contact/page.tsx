@@ -6,7 +6,7 @@ import { Footer } from "@/components/sections/Footer";
 import { MapPin, Phone, Mail, CheckCircle } from "lucide-react";
 
 const inputClass =
-  "w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-slate-400";
+  "w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-slate-400";
 const labelClass = "block text-sm font-medium text-slate-700 mb-1.5";
 
 export default function ContactPage() {
@@ -47,7 +47,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-white py-14 md:py-20 border-b border-slate-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-3">
             Get in Touch
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-5">
@@ -68,26 +68,26 @@ export default function ContactPage() {
                 <h2 className="text-xl font-bold text-slate-900 mb-6">Contractors Choice Agency</h2>
                 <ul className="space-y-5">
                   <li className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Phone className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Phone</p>
-                      <a href="tel:844-967-5247" className="text-slate-900 font-semibold hover:text-blue-600 transition-colors">
+                      <a href="tel:844-967-5247" className="text-slate-900 font-semibold hover:text-orange-700 transition-colors">
                         844-967-5247
                       </a>
                       <p className="text-xs text-slate-500 mt-0.5">Mon–Fri 8am–6pm MST</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Mail className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Email</p>
-                      <a href="mailto:josh@contractorschoiceagency.com" className="text-slate-900 font-semibold hover:text-blue-600 transition-colors break-all">
+                      <a href="mailto:josh@contractorschoiceagency.com" className="text-slate-900 font-semibold hover:text-orange-700 transition-colors break-all">
                         josh@contractorschoiceagency.com
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-orange-700 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Address</p>
                       <address className="text-slate-900 not-italic leading-relaxed">
@@ -99,9 +99,9 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="bg-blue-600 rounded-2xl p-6 text-white">
+              <div className="bg-orange-700 rounded-2xl p-6 text-white">
                 <p className="font-semibold mb-1">Need a certificate fast?</p>
-                <p className="text-blue-100 text-sm">
+                <p className="text-orange-100 text-sm">
                   Call us directly at{" "}
                   <a href="tel:844-967-5247" className="text-white font-bold hover:underline">
                     844-967-5247
@@ -167,7 +167,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-60 cursor-pointer"
+                    className="w-full bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-800 transition-colors disabled:opacity-60 cursor-pointer"
                   >
                     {submitting ? "Sending…" : "Send Message"}
                   </button>

@@ -17,7 +17,7 @@ const STATES = [
 ];
 
 const inputClass =
-  "w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-slate-400";
+  "w-full px-4 py-3 rounded-lg border border-slate-300 text-slate-900 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-slate-400";
 const labelClass = "block text-sm font-medium text-slate-700 mb-1.5";
 
 export default function QuotePage() {
@@ -58,7 +58,7 @@ export default function QuotePage() {
       {/* Hero */}
       <section className="bg-white py-14 md:py-20 border-b border-slate-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-orange-700 uppercase tracking-wider mb-3">
             Free Quote
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-5">
@@ -86,13 +86,13 @@ export default function QuotePage() {
               </p>
               <p className="text-sm text-slate-500 mb-6">
                 Need to reach us sooner?{" "}
-                <a href="tel:844-967-5247" className="text-blue-600 font-semibold hover:text-blue-700">
+                <a href="tel:844-967-5247" className="text-orange-700 font-semibold hover:text-orange-800">
                   Call 844-967-5247
                 </a>
               </p>
               <a
                 href="/"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center gap-2 bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-800 transition-colors"
               >
                 Back to Home
               </a>
@@ -100,10 +100,10 @@ export default function QuotePage() {
           ) : (
             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
               {/* Trust bar */}
-              <div className="flex items-center gap-3 mb-8 p-4 bg-blue-50 rounded-lg">
-                <Truck className="w-6 h-6 text-blue-600 flex-shrink-0" />
+              <div className="flex items-center gap-3 mb-8 p-4 bg-orange-50 rounded-lg">
+                <Truck className="w-6 h-6 text-orange-700 flex-shrink-0" />
                 <p className="text-sm text-slate-700">
-                  <strong className="text-blue-700">Specialty truck insurance experts.</strong>{" "}
+                  <strong className="text-orange-800">Specialty truck insurance experts.</strong>{" "}
                   We&apos;ll match you with the right carrier for your operation — same day.
                 </p>
               </div>
@@ -252,7 +252,7 @@ export default function QuotePage() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-60 cursor-pointer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-700 text-white font-semibold px-8 py-4 rounded-lg hover:bg-orange-800 transition-colors disabled:opacity-60 cursor-pointer"
                   >
                     {submitting ? "Submitting…" : "Request My Free Quote"}
                   </button>
@@ -264,7 +264,7 @@ export default function QuotePage() {
 
               <div className="mt-8 text-center p-6 bg-slate-50 rounded-xl border border-slate-200">
                 <p className="text-sm text-slate-600 mb-2">Prefer to talk? Call us directly:</p>
-                <a href="tel:844-967-5247" className="flex items-center justify-center gap-2 text-xl font-bold text-blue-600 hover:text-blue-700">
+                <a href="tel:844-967-5247" className="flex items-center justify-center gap-2 text-xl font-bold text-orange-700 hover:text-orange-800">
                   <Phone className="w-5 h-5" />
                   844-967-5247
                 </a>

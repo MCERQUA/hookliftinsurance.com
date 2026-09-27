@@ -81,7 +81,7 @@ export default async function BlogPostPage({
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <a
             href="/blog"
-            className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors mb-8"
+            className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-orange-700 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
@@ -115,24 +115,24 @@ export default async function BlogPostPage({
           </div>
 
           {/* CTA */}
-          <div className="mt-10 bg-blue-600 rounded-2xl p-8 text-center">
+          <div className="mt-10 bg-orange-700 rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">
               Ready to get the right coverage?
             </h2>
-            <p className="text-blue-100 mb-6 text-sm">
+            <p className="text-orange-100 mb-6 text-sm">
               Contractors Choice Agency specializes in hooklift and roll-off truck insurance.
               Get a free quote from a specialist today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="/quote"
-                className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-orange-700 font-semibold px-6 py-3 rounded-lg hover:bg-orange-50 transition-colors"
               >
                 Get a Free Quote <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="tel:844-967-5247"
-                className="text-white font-semibold px-6 py-3 rounded-lg border border-blue-400 hover:bg-blue-700 transition-colors"
+                className="text-white font-semibold px-6 py-3 rounded-lg border border-orange-400 hover:bg-orange-800 transition-colors"
               >
                 Call 844-967-5247
               </a>
