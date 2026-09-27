@@ -6,6 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hookliftinsurance.com"),
+  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }, { url: "/favicon.ico", sizes: "32x32" }] },
   title: {
     default: "Hooklift Insurance — Coverage for Hooklift, Roll-Off & Crane Trucks",
     template: "%s | Hooklift Insurance",
