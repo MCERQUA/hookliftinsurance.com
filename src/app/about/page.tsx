@@ -104,7 +104,7 @@ export default function AboutPage() {
                     <div>
                       <p className="text-xs text-slate-500 mb-0.5 font-medium uppercase tracking-wide">Address</p>
                       <address className="text-slate-900 not-italic leading-relaxed">
-                        12220 E Riggs Road Suite #105<br />
+                        12220 E Riggs Road Suite #104<br />
                         Chandler, AZ 85249
                       </address>
                     </div>

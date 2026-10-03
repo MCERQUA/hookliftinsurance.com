@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2 text-slate-400">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                12220 E Riggs Road, Suite #105<br />Chandler, AZ 85249
+                12220 E Riggs Road, Suite #104<br />Chandler, AZ 85249
               </li>
             </ul>
           </div>
