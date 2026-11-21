@@ -24,14 +24,23 @@ export default function ContactPage() {
     new FormData(form).forEach((v, k) => { data[k] = v.toString(); });
 
     try {
-      await fetch(
-        "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance.com",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ formName: "contact", ...data }),
-        }
-      );
+      let stored = false;
+      try {
+        const res = await fetch(
+                "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=hookliftinsurance.com",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ formName: "contact", ...data }),
+                }
+              );
+        // The webhook answers 200 with stored:false when it did not store the lead.
+        if (res.ok) { const j = await res.json().catch(() => null); stored = !j || j.stored !== false; }
+      } catch { /* fall through to Netlify Forms */ }
+      if (!stored) {
+        const fb = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "contact", ...data }).toString() });
+        if (!fb.ok) throw new Error(String(fb.status));
+      }
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us directly at 844-967-5247.");
